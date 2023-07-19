@@ -1,13 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&family=Markazi+Text&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a{
+  text-decoration: none;
+  color: #000;
 }
+
+ul > li {
+  list-style-type: none;
+}
+
+ul {
+  display: flex;
+  gap: 10px;
+}
+
+header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.intro {
+  background-color: #495E57;
+}
+
+.intro h1{
+  padding-left: 16px;
+  margin: 0;
+  color: #F4CE14;
+  font-size: 64px;
+  font-family: 'Markazi Text', serif;
+}
+
+.intro h2{
+  padding-left: 16px;
+  margin: 0px;
+  color: #EDEFEE;
+  font-size: 40px;
+  font-family: 'Markazi Text', serif;
+}
+
+.intro button {
+  width: 148px;
+  height: 35px;
+  background-color: #F4CE14;
+  border: none;
+  border-radius: 16px;
+  margin-left: 50px;
+  margin-bottom: 10px;
+}
+
+.intro button:hover{
+  cursor: pointer;
+}
+
+.intro p {
+  color: #fff;
+  font-size: 18px;
+  font-family: 'Karla', sans-serif;
+  width: 50%;
+}
+
+.intro div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0px;
+}
+
+.intro img {
+  width: 25%;
+  border-radius: 16px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+footer > p {
+  position: fixed;
+  bottom: 0;
+}
+
+
+
+
