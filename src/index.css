@@ -24,20 +24,30 @@ header{
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding-top: 10px;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  background: #EDEFEE;
+
 }
 
 main {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 10px;
+  padding-top: 60px;
+  padding-bottom: 70px;
+  
 }
 
-.intro {
+.hero, .chicago {
   background-color: #495E57;
+  padding: 30px;
 }
 
-.intro h1{
+.hero h1, .chicago h1{
   padding-left: 16px;
   margin: 0;
   color: #F4CE14;
@@ -45,7 +55,7 @@ main {
   font-family: 'Markazi Text', serif;
 }
 
-.intro h2{
+.hero h2, .chicago h2{
   padding-left: 16px;
   margin: 0px;
   color: #EDEFEE;
@@ -53,47 +63,92 @@ main {
   font-family: 'Markazi Text', serif;
 }
 
-.intro button {
+main button {
   width: 148px;
   height: 35px;
   background-color: #F4CE14;
   border: none;
   border-radius: 16px;
   margin-left: 50px;
-  margin-bottom: 10px;
 }
 
-.intro button:hover{
+main button:hover{
   cursor: pointer;
 }
 
-.intro p {
+.hero p {
   color: #fff;
   font-size: 18px;
   font-family: 'Karla', sans-serif;
   width: 50%;
 }
 
-.intro div {
+.hero div {
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 0px;
 }
 
-.intro img {
+.hero img, .chicago img {
   width: 25%;
   border-radius: 16px;
 }
 
-footer {
+.specials-container{
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap: 10px;
+}
+.specials-container img {
+  width: 100%;
+}
+.special {
+  padding: 20px;
+  border: 1px solid #495E57;
+  border-radius: 5px;
 }
 
-footer > p {
+.testimonials-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap: 10px;
+  background: #495E57;
+  color: #EDEFEE;
+}
+.testimonials-container img {
+  width: 70%;
+  border-radius: 16px;
+}
+
+.testimonial {
+  padding: 20px;
+  border: 1px solid #495E57;
+  border-radius: 5px;
+}
+footer {
+  display: flex;
+  width: 100vw;
+  justify-content: space-around;
+  background: #EDEFEE;
   position: fixed;
   bottom: 0;
+}
+
+.booking {
+  padding: 50px 25px;
+}
+
+.booking form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  gap: 30px;
 }
 
 
