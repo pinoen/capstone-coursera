@@ -78,7 +78,7 @@ main button:hover{
 
 .hero p {
   color: #fff;
-  font-size: 18px;
+  font-size: 22px;
   font-family: 'Karla', sans-serif;
   width: 50%;
 }
@@ -93,6 +93,17 @@ main button:hover{
 .hero img, .chicago img {
   width: 25%;
   border-radius: 16px;
+}
+
+.chicago {
+  background-color: #EDEFEE;
+  display: flex;
+  width: '100vw'
+}
+
+.chicago > div {
+  width: 50%;
+  padding: 30px;
 }
 
 .specials-container{
@@ -130,6 +141,14 @@ main button:hover{
   border: 1px solid #495E57;
   border-radius: 5px;
 }
+
+.chef {
+  width: 50%;
+}
+
+.chef img {
+  width: 90%
+}
 footer {
   display: flex;
   width: 100vw;
@@ -140,7 +159,7 @@ footer {
 }
 
 .booking {
-  padding: 50px 25px;
+  padding: 200px 25px;
 }
 
 .booking form {
@@ -149,6 +168,43 @@ footer {
   flex-direction: column;
   width: 50%;
   gap: 30px;
+}
+
+@media(max-width: 600px){
+  .testimonials-container, .specials-container, .chicago {
+    flex-direction: column;
+  }
+
+  ul{
+    flex-direction: column;
+  }
+  main {
+    padding-top: 200px;
+  }
+  .hero, .chicago {
+    padding: 10px;
+  }
+  
+  .hero h1, .chicago h1{
+    font-size: 44px;
+  }
+  
+  .hero h2, .chicago h2{
+    font-size: 30px
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+  .chicago > div {
+    width: 100%;
+    padding: 0px;
+  }
+
+  .chef {
+    margin: 15px;
+    width: 100%;
+  }
 }
 
 

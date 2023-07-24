@@ -2,7 +2,7 @@ import Header from './components/Header';
 import Main from './components/Main';
 import Footer from './components/Footer';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import BookingPage from './components/BookingPage';
+import BookingForm from './components/BookingForm';
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
         <Header />
         <Routes>
           <Route path='/' element={<Main />} />
-          <Route path='/book' element={<BookingPage />} />
+          <Route path='/book' element={<BookingForm />} />
         </Routes>
         <Footer />
       </BrowserRouter>
